@@ -1,4 +1,4 @@
-var express  = require('express');
+	var express  = require('express');
     var app      = express();                               // create our app w/ express
     var mongoose = require('mongoose');                     // mongoose for mongodb
     var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
@@ -22,5 +22,5 @@ var express  = require('express');
     app.get('*', function(req, res) {
         res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
     });
-    app.listen(3100);
-    console.log("App listening on port 9001");
+    app.listen(process.env.PORT || 8080);
+    console.log("App listening on port 3100");

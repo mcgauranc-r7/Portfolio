@@ -1,4 +1,4 @@
-var scotchTodo = angular.module('scotchTodo', ['ngMap']);
+var myCareer = angular.module('myCareer', ['ngMap']);
  
 function mainController($scope, $http) {
     $scope.formData = {};
