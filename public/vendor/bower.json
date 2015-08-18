@@ -19,6 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "~2.10.6"
+    "moment": "~2.10.6",
+    "ngmap": "~1.10.1"
   }
 }

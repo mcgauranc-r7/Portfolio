@@ -1,10 +1,11 @@
-var scotchTodo = angular.module('scotchTodo', []);
-
+var scotchTodo = angular.module('scotchTodo', ['ngMap']);
+ 
 function mainController($scope, $http) {
     $scope.formData = {};
 
-    $scope.diffDate = function(to,from){
-		debugger
+    $scope.diffDate = function(from,to){
+		now =moment(to)
+		return Math.round(now.diff(moment(from), 'months', true)/ 12);
 	};
     // when landing on the page, get all todos and show them
     $http.get('/data/roles')
