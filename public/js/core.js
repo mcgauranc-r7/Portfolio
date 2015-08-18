@@ -2,6 +2,9 @@ var myCareer = angular.module('myCareer', ['ngMap']);
  
 function mainController($scope, $http) {
     $scope.formData = {};
+    $scope.timeSpan = function(from,to){
+		return moment(from).format("MMM YY") + " to " +  moment(to).format("MMM YY");
+	};
 
     $scope.diffDate = function(from,to){
 		now =moment(to)

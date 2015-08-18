@@ -1,7 +1,7 @@
 html  { 
 	min-height: 100%;
 	background-size: cover;
-	background: radial-gradient(transparent, black) ,url(../image/profile-background.jpg);
+	background: radial-gradient(transparent, rgba(249, 248, 248, 0.32)) ,url(../image/profile-background.jpg);
 }
 body  { 
 	margin : 10%;
@@ -18,7 +18,9 @@ body  {
     padding: 20px 0 20px;
     position: relative;
 }
-
+.timeline-body {
+	width: 30%;
+}
     .timeline:before {
         top: 0;
         bottom: 0;
