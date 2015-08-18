@@ -28,10 +28,10 @@
 			  <div class="timeline-badge success"><i class="glyphicon glyphicon-lock"></i></div>
 			  <div class="timeline-panel">
 				<div class="timeline-heading">
-				  <h4 class="pull-right">
-				  <img class="logo" src="image/{{todo.company}}.png">
-				  <small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> {{timeSpan(todo.from,todo.to)}} ({{diffDate(todo.from,todo.to)}} years)</small></h4><br><br>				  
-				  <h4 class="timeline-title">{{todo.title}} at <a href="#{{todo.company}}">{{todo.company}}</a></h4>
+				  <h4 class="timeline-title">
+					{{todo.title}} at <a href="#{{todo.company}}">{{todo.company}}</a>
+				  </h4>
+				  <small class="pull-right text-muted"><i class="glyphicon glyphicon-calendar"></i> {{timeSpan(todo.from,todo.to)}} ({{diffDate(todo.from,todo.to)}} years)</small></h4><br><br>				  
 				</div>
 				<div class="container">
 				    <div id="panel2">

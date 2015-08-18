@@ -1,7 +1,7 @@
 html  { 
 	min-height: 100%;
 	background-size: cover;
-	background: radial-gradient(transparent, rgba(249, 248, 248, 0.32)) ,url(../image/profile-background.jpg);
+	background: url(../image/profile-background.jpg);
 }
 body  { 
 	margin : 10%;
