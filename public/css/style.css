@@ -11,7 +11,11 @@ body  {
 	height : 100vh;
 }
 .personal {
-	background-color: white;
+	background-color: transparent;
+}
+.logo {
+	width: 5em;
+	height: 2em;
 }
 .timeline {
     list-style: none;
@@ -33,10 +37,13 @@ body  {
     }
 
     .timeline > li {
+	
         margin-bottom: 20px;
         position: relative;
     }
-
+	.timeline > li  > .timeline-panel{
+		background-color: white;
+    }
         .timeline > li:before,
         .timeline > li:after {
             content: " ";
