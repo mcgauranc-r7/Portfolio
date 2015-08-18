@@ -4,7 +4,7 @@ html  {
 	background: url(../image/profile-background.jpg);
 }
 body  { 
-	margin : 10%;
+	margin : 5%;
 }
 #todo-list              { margin-bottom:30px; }
 .main{
