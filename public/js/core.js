@@ -5,7 +5,10 @@ function mainController($scope, $http) {
     $scope.timeSpan = function(from,to){
 		return moment(from).format("MMM YY") + " to " +  moment(to).format("MMM YY");
 	};
-
+	$scope.stripCo = function(str) {
+		console.log(str.replace(/\s/g,''))
+		return str.replace(/\s/g,'');
+	}
     $scope.diffDate = function(from,to){
 		now =moment(to)
 		return Math.round(now.diff(moment(from), 'months', true)/ 12);

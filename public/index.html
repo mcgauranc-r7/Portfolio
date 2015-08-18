@@ -41,18 +41,16 @@
 						</a>
 						<div id="{{todo._id}}" class="timeline-body panel-collapse collapse">
 							{{todo.description}}
+							<map center="{{stripCo(todo.coordinates)}}" zoom="7">
+								<info-window id="1" position="{{stripCo(todo.coordinates)}}" visible="true">					  
+								  <div ng-non-bindable="">
+									<h1>{{todo.company}}</h1>
+									{{todo.location}}<br>
+								  </div>
+								</info-window>
+							</map>
 						</div>
 					</div>
-
-					
-				<!--map center="{{todo.coordinates}}" zoom="3">
-					<info-window id="1" position="{{todo.coordinates}}" visible="true">					  
-					  <div ng-non-bindable="">
-						<h1>{{todo.company}}</h1>
-						{{todo.location}}<br>
-					  </div>
-					</info-window>
-				  </map-->
 			  </div>
 			</li>	 
 		</ul>
