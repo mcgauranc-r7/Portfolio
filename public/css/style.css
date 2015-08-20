@@ -224,24 +224,6 @@ body  {
 	animation: moveRight 0.4s;
 	animation-fill-mode: forwards;
 }
-.reveal{
-	opacity: 0.1;
-}
-.timeline-panel-first {
-	font-size: large;
-}
-.timeline-inverted .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
-.timeline-odd .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
 
 @keyframes showHiddenDiv {
     0% {
@@ -273,6 +255,26 @@ body  {
  		opacity: 1;
 	}
 }  
+
+.reveal{
+	opacity: 0.1;
+}
+.timeline-panel-first {
+	font-size: large;
+}
+.timeline-inverted .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+.timeline-odd .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+
 }
 /* Portrait */
 @media only screen 
