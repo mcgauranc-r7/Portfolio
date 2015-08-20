@@ -30,63 +30,7 @@ body  {
     padding: 20px 0 20px;
     position: relative;
 }
-.timeline-inverted .timeline-panel-anim{
-	animation: moveLeft 0.4s;
-	animation-fill-mode: forwards;
-}
-.timeline-odd .timeline-panel-anim{
-	animation: moveRight 0.4s;
-	animation-fill-mode: forwards;
-}
-.reveal{
-	opacity: 0.1;
-}
-.timeline-panel-first {
-	font-size: large;
-}
-.timeline-inverted .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
-.timeline-odd .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
 
-@keyframes showHiddenDiv {
-    0% {
-		opacity: 0.1;
-    }
-    100% {
-		opacity: 1;
-    }
-}
-
-@keyframes moveRight {
-
-	100% {
-
-		transform: translate3d(40%,0,0); 
-	}
-}
-@keyframes moveLeft {
-	100% {
-		transform: translate3d(-40%,0,0);
-	}
-}
-@keyframes showBadge {
-	0% {
-		opacity:0;
-	}
- 
-	100% {
- 		opacity: 1;
-	}
-}
 .timeline-body {
  
 }
@@ -268,3 +212,83 @@ body  {
 				}
 		}
  
+ /* anything aboive 320*/
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1600px){
+ .timeline-inverted .timeline-panel-anim{
+	animation: moveLeft 0.4s;
+	animation-fill-mode: forwards;
+}
+.timeline-odd .timeline-panel-anim{
+	animation: moveRight 0.4s;
+	animation-fill-mode: forwards;
+}
+.reveal{
+	opacity: 0.1;
+}
+.timeline-panel-first {
+	font-size: large;
+}
+.timeline-inverted .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+.timeline-odd .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showHiddenDiv {
+    0% {
+		opacity: 0.1;
+    }
+    100% {
+		opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+
+	100% {
+
+		transform: translate3d(40%,0,0); 
+	}
+}
+@keyframes moveLeft {
+	100% {
+		transform: translate3d(-40%,0,0);
+	}
+}
+@keyframes showBadge {
+	0% {
+		opacity:0;
+	}
+ 
+	100% {
+ 		opacity: 1;
+	}
+}  
+}
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+}
