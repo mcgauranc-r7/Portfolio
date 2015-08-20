@@ -1,5 +1,4 @@
 html  { 
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,6 +15,12 @@ body  {
 .personal {
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
 }
+.loading {
+	height: 100vh;
+    background:
+        radial-gradient(#1C1E67,#070331);
+
+}
 .logo {
 	width: 5em;
 	height: 2em;
@@ -29,25 +34,47 @@ body  {
 	animation: moveLeft 0.4s;
 	animation-fill-mode: forwards;
 }
-.timeline-odd  {
-	text-align: right;
-}
 .timeline-odd .timeline-panel-anim{
 	animation: moveRight 0.4s;
 	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
+.reveal{
+	opacity: 0.1;
+}
+.timeline-panel-first {
+	font-size: large;
+}
+.timeline-inverted .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+.timeline-odd .timeline-panel-anim .reveal {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+	animation: showHiddenDiv 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showHiddenDiv {
+    0% {
+		opacity: 0.1;
+    }
+    100% {
+		opacity: 1;
+    }
+}
+
 @keyframes moveRight {
 
 	100% {
-		width: 35%;
-		transform: translate3d(40%,0,0);
- 
+
+		transform: translate3d(40%,0,0); 
 	}
 }
 @keyframes moveLeft {
 	100% {
-		width: 35%;
 		transform: translate3d(-40%,0,0);
 	}
 }
@@ -75,7 +102,6 @@ body  {
     }
 
     .timeline > li {
- 
 		margin-top: 50px;
 		margin-bottom: 50px;
 		position: relative;
@@ -109,11 +135,11 @@ body  {
         }
 
         .timeline > li > .timeline-panel {
-            width: 16%;
+            width: 35%;
             float: left;
             border-top: 1px solid #d4d4d4;
             border-radius: 2px;
-            padding: 20px;
+            padding: 20px 0 20px 20px;
             position: relative;
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -149,7 +175,7 @@ body  {
         }
 		li.visible .timeline-badge {
 			animation-timing-function: linear;
-			animation: showBadge 2s;
+			animation: showBadge 1s;
 			animation-fill-mode: forwards;
 		}
  
