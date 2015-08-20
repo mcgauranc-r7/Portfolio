@@ -122,24 +122,15 @@ body  {
 			animation: showBadge 1s;
 			animation-fill-mode: forwards;
 		}
+ @keyframes showBadge {
+	0% {
+		opacity:0;
+	}
  
-        .timeline > li.timeline-inverted > .timeline-panel {
-            float: right;
-        }
-
-            .timeline > li.timeline-inverted > .timeline-panel:before {
-                border-left-width: 0;
-                border-right-width: 15px;
-                left: -15px;
-                right: auto;
-            }
-
-            .timeline > li.timeline-inverted > .timeline-panel:after {
-                border-left-width: 0;
-                border-right-width: 14px;
-                left: -14px;
-                right: auto;
-            }
+	100% {
+ 		opacity: 1;
+	}
+}  
 
 		.timeline-badge.primary {
 			background-color: #2e6da4 !important;
@@ -212,9 +203,9 @@ body  {
 				}
 		}
  
- /* anything aboive 320*/
+ /* anything aboive 377*/
 @media screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 377px) 
   and (max-device-width: 1600px){
  .timeline-inverted .timeline-panel-anim{
 	animation: moveLeft 0.4s;
@@ -246,15 +237,6 @@ body  {
 		transform: translate3d(-40%,0,0);
 	}
 }
-@keyframes showBadge {
-	0% {
-		opacity:0;
-	}
- 
-	100% {
- 		opacity: 1;
-	}
-}  
 
 .reveal{
 	opacity: 0.1;
@@ -262,6 +244,27 @@ body  {
 .timeline-panel-first {
 	font-size: large;
 }
+
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+
+
 .timeline-inverted .timeline-panel-anim .reveal {
 	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation-delay: 2s;
@@ -276,21 +279,22 @@ body  {
 }
 
 }
-/* Portrait */
+/* Phone */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-
+  and (max-device-width: 480px) {
+	 @keyframes floatAnim {
+		0% {
+			opacity:0.5;
+		}
+	 
+		100% {
+	 		opacity: 1;
+	 		margin-left: 20%;
+		}
+	}  
+	.timeline-panel {
+		animation: floatAnim 1s;
+		animation-fill-mode: forwards;
+	}
 }
