@@ -294,7 +294,7 @@ body  {
 	 	}
 	}  
 	.timeline-panel {
-		margin-left: 10%;
+		margin-left: 20%;
 		animation: floatAnim 1s;
 		animation-fill-mode: forwards;
 	}
