@@ -1,116 +1,114 @@
-html  { 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+html {
+    background - size: cover;
+    background - repeat: no - repeat;
+    background - position: center center;
     /* background-size: 100%; */
     /* background-size: 100%; */
-    background-image: url(../image/profile-background.jpg);
-	}
-body  { 
+    background - image: url(.. / image / profile - background.jpg);
 }
-#todo-list              { margin-bottom:30px; }
-.main{
-	height : 100vh;
-}
-.personal {
-	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
-}
-.loading {
-	height: 100vh;
-    background:
-        radial-gradient(#1C1E67,#070331);
+body {}#
+todo - list {
+        margin - bottom: 30 px;
+    }
+    .main {
+        height: 100 vh;
+    }
+    .personal {
+        background: none repeat scroll 0 % 0 % rgba(0, 0, 0, 0.8);
+    }
+    .loading {
+        height: 100 vh;
+        background: radial - gradient(#1C1E67,# 070331);
 
-}
-.logo {
-	width: 5em;
-	height: 2em;
-}
-.timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-}
+    }
+    .logo {
+        width: 5e m;
+        height: 2e m;
+    }
+    .timeline {
+        list - style: none;
+        padding: 20 px 0 20 px;
+        position: relative;
+    }
 
-.timeline-body {
- 
-}
-    .timeline:before {
+.timeline - body {
+
+    }
+    .timeline: before {
         top: 0;
         bottom: 0;
         position: absolute;
         content: " ";
-        width: 3px;
-        background-color: #eeeeee;
-        left: 50%;
-        margin-left: -1.5px;
+        width: 3 px;
+        background - color: #eeeeee;
+        left: 50 % ;
+        margin - left: -1.5 px;
     }
 
-    .timeline > li {
-		margin-top: 50px;
-		margin-bottom: 50px;
-		position: relative;
+.timeline > li {
+        margin - top: 50 px;
+        margin - bottom: 50 px;
+        position: relative;
     }
-	.timeline > li  > .timeline-panel{
-		color: white;
+    .timeline > li > .timeline - panel {
+        color: white;
     }
-        .timeline > li:before,
-        .timeline > li:after {
-            content: " ";
-            display: table;
-        }
+    .timeline > li: before,
+    .timeline > li: after {
+        content: " ";
+        display: table;
+    }
 
-        .timeline > li:after {
-            clear: both;
-        }
+.timeline > li: after {
+    clear: both;
+}
 
-        .timeline > li:before {
-				position: absolute;
-                display: inline-block;
- 
-		}
-		,
-        .timeline > li:after {
-            content: " ";
-            display: table;
-        }
+.timeline > li: before {
+        position: absolute;
+        display: inline - block;
 
-        .timeline > li:after {
-            clear: both;
-        }
+    },
+    .timeline > li: after {
+        content: " ";
+        display: table;
+    }
 
-        .timeline > li > .timeline-panel {
-            width: 35%;
-            float: left;
-            border-top: 1px solid #d4d4d4;
-            border-radius: 2px;
-            padding: 20px 0 20px 20px;
-            position: relative;
-            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-        }
+.timeline > li: after {
+    clear: both;
+}
 
-            .timeline > li > .timeline-panel:before {
-              
- 
-            }
+.timeline > li > .timeline - panel {
+    width: 35 % ;
+    float: left;
+    border - top: 1 px solid# d4d4d4;
+    border - radius: 2 px;
+    padding: 20 px 0 20 px 20 px;
+    position: relative; - webkit - box - shadow: 0 1 px 6 px rgba(0, 0, 0, 0.175);
+    box - shadow: 0 1 px 6 px rgba(0, 0, 0, 0.175);
+}
 
-            .timeline > li > .timeline-panel:after {
+.timeline > li > .timeline - panel: before {
 
-            }
 
-        .timeline > li > .timeline-badge {
-			opacity:0.1;
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            margin-left: -25px;
-            background-color: #999999;
+}
+
+.timeline > li > .timeline - panel: after {
+
+}
+
+.timeline > li > .timeline - badge {
+    opacity: 0.1;
+    color: #fff;
+    width: 50 px;
+    height: 50 px;
+    line - height: 50 px;
+    font - size: 1.4e m;
+    text - align: center;
+    position: absolute;
+    top: -25 px;
+    left: 50 % ;
+    margin - left: -25 px;
+    background - color: #999999;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
@@ -133,23 +131,23 @@ body  {
 }  
 
 		.timeline-badge.primary {
-			background-color: #2e6da4 !important;
-		}
+			background-color: # 2e6 da4!important;
+}
 
-		.timeline-badge.success {
-			background-color: #3f903f !important;
+.timeline - badge.success {
+    background - color: #3f903f !important;
 		}
 
 		.timeline-badge.warning {
-			background-color: #f0ad4e !important;
-		}
+			background-color: # f0ad4e!important;
+}
 
-		.timeline-badge.danger {
-			background-color: #d9534f !important;
-		}
+.timeline - badge.danger {
+    background - color: #d9534f!important;
+}
 
-		.timeline-badge.info {
-			background-color: #5bc0de !important;
+.timeline - badge.info {
+        background - color: #5bc0de !important;
 		}
 
 		.timeline-title {
@@ -279,10 +277,32 @@ body  {
 }
 
 }
-/* Phone */
+/* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+	 @keyframes floatAnim {
+		0% {
+			opacity:0.5;
+		}
+	 
+		100% {
+	 		opacity: 1;
+	 		margin-left: 10%;
+		}
+	}  
+	.timeline-panel {
+		animation: floatAnim 1s;
+		animation-fill-mode: forwards;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) {
 	 @keyframes floatAnim {
 		0% {
 			opacity:0.5;
@@ -297,4 +317,5 @@ body  {
 		animation: floatAnim 1s;
 		animation-fill-mode: forwards;
 	}
+
 }
