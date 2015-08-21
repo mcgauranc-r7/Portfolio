@@ -291,10 +291,10 @@ body  {
 	 
 		100% {
 	 		opacity: 1;
-	 		margin-left: 20%;
-		}
+	 	}
 	}  
 	.timeline-panel {
+		margin-left: 10%;
 		animation: floatAnim 1s;
 		animation-fill-mode: forwards;
 	}
@@ -312,10 +312,10 @@ body  {
 	 
 		100% {
 	 		opacity: 1;
-	 		margin-left: 10%;
-		}
+	 	}
 	}  
 	.timeline-panel {
+		margin-left: 10%;
 		animation: floatAnim 1s;
 		animation-fill-mode: forwards;
 	}
