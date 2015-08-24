@@ -4,12 +4,32 @@ html  {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-size: 100%; */
-    /* background-size: 100%; */
     background-image: url(../image/profile-background.jpg);
-	}
+}
 
-body  { 
+.loading {
+	animation-iteration-count: infinite;
+	animation: loading 2s;
+	animation-fill-mode: forwards;
+	height: 100vh;
+}
+@keyframes loading {
+	from{
+	  background-color: #234B6D;
+      background-image: -o-linear-gradient(transparent, black);    
+      background-image: -webkit-linear-gradient(transparent, black);
+      background-image: -moz-linear-gradient(transparent, black);    
+      background-image: -ms-linear-gradient(transparent, black);
+      background-image: linear-gradient(transparent, black);  
+	} 
+	to {
+		background-color: navy;
+      background-image: -o-linear-gradient(transparent, black);    
+      background-image: -webkit-linear-gradient(transparent, black);
+      background-image: -moz-linear-gradient(transparent, black);    
+      background-image: -ms-linear-gradient(transparent, black);
+      background-image: linear-gradient(transparent, black);  
+	}
 }
 .social {
 	height: 20vh;
@@ -20,9 +40,15 @@ body  {
     justify-content: center;
     align-items: center;
 	color: white;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: 40px 30px;
+}
+.social a {
+	color: white;
 }
 .social:hover{
-    opacity: 0.6;
+    opacity: 0.9;	
 }
 .social.facebook{
 	background-color: navy;
@@ -30,14 +56,15 @@ body  {
 .social.twitter{
 	background-color: #55acee;
 }
-.social.google{
-	background-color: #CE352A;
+.social.mail{
+	background-color: green;
 }
 .social.linkedIn{
-	background-color: #23639a;
+	background-color: #234B6D;
+	background-image: url('../image/linkedin.png');
 }
 #todo-list { margin-bottom:30px; }
-.main{
+.main {
 	height : 100vh;
 }
 .personal {

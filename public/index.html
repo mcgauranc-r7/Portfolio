@@ -28,22 +28,18 @@
 
 <!-- SET THE CONTROLLER -->
 <body ng-controller="mainController">
-	<div class="col-sm-6 col-md-3 social facebook">
-		Facebook
+	<div class="col-sm-6 col-md-4 social twitter">
+		<a href="https://twitter.com/metallic2ko">#</a>
 	</div>
-	<div class="col-sm-6 col-md-3 social twitter">
-		Twitter
-	</div>
-	<div class="col-sm-6 col-md-3 social google">
-		Google+
+	<div class="col-sm-6 col-md-4 social mail">
+		<a href="#"><i class="glyphicon glyphicon-envelope"></i></a>
 	</div>	
-	<div class="col-sm-6 col-md-3 social linkedIn">
-		<a href="https://www.linkedin.com/pub/ciaran-mcgauran/20/968/59">LinkedIn</a>
+	<div class="col-sm-6 col-md-4 social linkedIn">
+		<a href="https://www.linkedin.com/pub/ciaran-mcgauran/20/968/59">in</a>
 	</div>		
 	<div class="personal col-sm-12 col-md-12">
-			
 		<ul class="timeline" >
-			<li ng-repeat="todo in todos"  ng-class-even="'timeline-inverted'" ng-class-odd="'timeline-odd'" >
+			<li ng-repeat="todo in todos"  ng-class-even="'timeline-inverted'" ng-class-odd="'timeline-odd'" on-finish-render="ngRepeatFinished">
 			  <div class="timeline-badge success"><i class="glyphicon glyphicon-calendar"></i></div>
 			  <div class="timeline-panel">
 				<div class="timeline-heading">
@@ -51,7 +47,6 @@
 				  <h4 class="timeline-title">
 					{{todo.title}} at <a href="#{{todo.company}}">{{todo.company}}</a>
 				  </h4>
-			  
 				</div>
 				<div id="{{todo._id}}" class="timeline-body ">
 					{{todo.description}}
