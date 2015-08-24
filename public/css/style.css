@@ -1,4 +1,6 @@
+
 html  { 
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6,20 +8,40 @@ html  {
     /* background-size: 100%; */
     background-image: url(../image/profile-background.jpg);
 	}
+
 body  { 
 }
-#todo-list              { margin-bottom:30px; }
+.social {
+	height: 20vh;
+	font-size: 26px;
+	text-align: center;
+	vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+}
+.social:hover{
+    opacity: 0.6;
+}
+.social.facebook{
+	background-color: navy;
+}
+.social.twitter{
+	background-color: #55acee;
+}
+.social.google{
+	background-color: #CE352A;
+}
+.social.linkedIn{
+	background-color: #23639a;
+}
+#todo-list { margin-bottom:30px; }
 .main{
 	height : 100vh;
 }
 .personal {
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
-}
-.loading {
-	height: 100vh;
-    background:
-        radial-gradient(#1C1E67,#070331);
-
 }
 .logo {
 	width: 5em;
@@ -30,7 +52,39 @@ body  {
     padding: 20px 0 20px;
     position: relative;
 }
+.timeline-inverted .timeline-panel-anim{
+	animation: moveLeft 0.7s;
+	animation-fill-mode: forwards;
+}
+.timeline-odd  {
+ 
+}
+.timeline-odd .timeline-panel-anim{
+	animation: moveRight 0.7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes moveRight {
 
+	100% {
+		transform: translate3d(40%,0,0);
+ 
+	}
+}
+@keyframes moveLeft {
+	100% {
+		transform: translate3d(-40%,0,0);
+	}
+}
+@keyframes showBadge {
+	0% {
+		opacity:0;
+	}
+ 
+	100% {
+ 		opacity: 1;
+	}
+}
 .timeline-body {
  
 }
@@ -46,6 +100,7 @@ body  {
     }
 
     .timeline > li {
+ 
 		margin-top: 50px;
 		margin-bottom: 50px;
 		position: relative;
@@ -79,11 +134,11 @@ body  {
         }
 
         .timeline > li > .timeline-panel {
-            width: 35%;
+            width: 36%;
             float: left;
             border-top: 1px solid #d4d4d4;
             border-radius: 2px;
-            padding: 20px 0 20px 20px;
+            padding: 20px;
             position: relative;
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -119,18 +174,27 @@ body  {
         }
 		li.visible .timeline-badge {
 			animation-timing-function: linear;
-			animation: showBadge 1s;
+			animation: showBadge 2s;
 			animation-fill-mode: forwards;
 		}
- @keyframes showBadge {
-	0% {
-		opacity:0;
-	}
  
-	100% {
- 		opacity: 1;
-	}
-}  
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
 
 		.timeline-badge.primary {
 			background-color: #2e6da4 !important;
@@ -203,120 +267,3 @@ body  {
 				}
 		}
  
- /* anything aboive 377*/
-@media screen 
-  and (min-device-width: 377px) 
-  and (max-device-width: 1600px){
- .timeline-inverted .timeline-panel-anim{
-	animation: moveLeft 0.4s;
-	animation-fill-mode: forwards;
-}
-.timeline-odd .timeline-panel-anim{
-	animation: moveRight 0.4s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes showHiddenDiv {
-    0% {
-		opacity: 0.1;
-    }
-    100% {
-		opacity: 1;
-    }
-}
-
-@keyframes moveRight {
-
-	100% {
-
-		transform: translate3d(40%,0,0); 
-	}
-}
-@keyframes moveLeft {
-	100% {
-		transform: translate3d(-40%,0,0);
-	}
-}
-
-.reveal{
-	opacity: 0.1;
-}
-.timeline-panel-first {
-}
-
-
-        .timeline > li.timeline-inverted > .timeline-panel {
-            float: right;
-        }
-
-            .timeline > li.timeline-inverted > .timeline-panel:before {
-                border-left-width: 0;
-                border-right-width: 15px;
-                left: -15px;
-                right: auto;
-            }
-
-            .timeline > li.timeline-inverted > .timeline-panel:after {
-                border-left-width: 0;
-                border-right-width: 14px;
-                left: -14px;
-                right: auto;
-            }
-
-
-.timeline-inverted .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
-.timeline-odd .timeline-panel-anim .reveal {
-	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
-	animation: showHiddenDiv 2s;
-	animation-fill-mode: forwards;
-}
-
-}
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (orientation: portrait) {
-	 @keyframes floatAnim {
-		0% {
-			opacity:0.5;
-		}
-	 
-		100% {
-	 		opacity: 1;
-	 	}
-	}  
-	.timeline-panel {
-		margin-left: 20%;
-		animation: floatAnim 1s;
-		animation-fill-mode: forwards;
-	}
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (orientation: landscape) {
-	 @keyframes floatAnim {
-		0% {
-			opacity:0.5;
-		}
-	 
-		100% {
-	 		opacity: 1;
-	 	}
-	}  
-	.timeline-panel {
-		margin-left: 10%;
-		animation: floatAnim 1s;
-		animation-fill-mode: forwards;
-	}
-
-}
