@@ -22,5 +22,5 @@
     app.get('*', function(req, res) {
         res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
     });
-    app.listen(process.env.PORT || 3100);
+    app.listen(process.env.OPENSHIFT_NODEJS_PORT || 3100);
     console.log("App listening on port 3100");
