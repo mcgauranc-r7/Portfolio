@@ -9,7 +9,7 @@
     // configuration =================
 
     // Connect to our mongo database
-    mongoose.connect('mongodb://localhost/portfolio');
+    mongoose.connect('mongodb://localhost/portfolio2015');
     app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
     app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
     app.use(bodyParser.json());                                     // parse application/json
