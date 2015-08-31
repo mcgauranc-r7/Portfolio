@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "0.0.1",
   "description": "Career Portfolio for Ciaran McGauran",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test",
-	"start": "node index.js"
+	"start": "node server.js"
   },
   "repository": {
     "type": "git",
