@@ -29,7 +29,6 @@
 
 
 	http.createServer(app).listen(app.get('port') ,app.get('ip'), function () {
-		console.log("✔ Express server listening at %s:%d ", app.get('ip'),app.get('port'));
-		server();
+ 
 	});
-    console.log("App listening");
+    console.log("App listening on port 3100");
